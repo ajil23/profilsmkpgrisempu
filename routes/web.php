@@ -61,3 +61,4 @@ Route::post('/artikel/store', [ArtikelController::class, 'store'])->name('artike
 Route::get('/artikel/edit/{id}', [ArtikelController::class, 'edit'])->name('artikel.edit');
 Route::post('/artikel/update/{id}', [ArtikelController::class, 'update'])->name('artikel.update');
 Route::get('/artikel/delete/{id}', [ArtikelController::class, 'delete'])->name('artikel.delete');
+Route::get('/artikel/detail/{id}', [ArtikelController::class, 'detail'])->name('artikel.detail');

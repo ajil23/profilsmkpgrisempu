@@ -239,11 +239,11 @@
                 <ul class="list-inline mb-2">
                   <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>{{date('d-m-Y', strtotime($item->created_at));}}</li>
                 </ul>
-                <a href="course-single.html">
+                <a href="{{route('artikel.detail', $item->id)}}">
                   <h4 class="card-title">{{$item->judul}}</h4>
                 </a>
                 <p class="card-text mb-4"> Klik tombol untuk baca selengkapnya</p>
-                <a href="course-single.html" class="btn btn-primary btn-sm">Lebih Lanjut</a>
+                <a href="{{route('artikel.detail', $item->id)}}" class="btn btn-primary btn-sm">Lebih Lanjut</a>
               </div>
             </div>
         </div>
@@ -266,7 +266,7 @@
             <div class="card border-0 rounded-0 hover-shadow">
               <img class="card-img-top rounded-0" src="{{ asset('storage/'.$item->image) }}" alt="teacher">
               <div class="card-body">
-                <a href="teacher-single.html">
+                <a href="#">
                   <h4 class="card-title">{{$item->nama}}</h4>
                 </a>
                 <p>{{$item->jabatan}}</p>

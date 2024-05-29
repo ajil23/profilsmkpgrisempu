@@ -56,4 +56,9 @@ class ArtikelController extends Controller
         $artikel->delete();
         return redirect()->route('artikel.read');
     }
+
+    public function detail($id){
+        $detailartikel = Artikel::find($id);
+        return view('artikel', compact('detailartikel'));
+    }
 }
