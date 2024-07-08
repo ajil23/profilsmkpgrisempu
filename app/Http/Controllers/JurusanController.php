@@ -20,6 +20,7 @@ class JurusanController extends Controller
         $jurusan = new Jurusan();
         $jurusan->nama = $request->nama;
         $jurusan->kode = $request->kode;
+        $jurusan->deskripsi = $request->deskripsi;
         $jurusan->save();
         return redirect()->route('jurusan.read');
     }
@@ -33,6 +34,7 @@ class JurusanController extends Controller
         $jurusan = Jurusan::find($id);
         $jurusan->nama = $request->nama;
         $jurusan->kode = $request->kode;
+        $jurusan->deskripsi = $request->deskripsi;
         $jurusan->update();
         return redirect()->route('jurusan.read');
     }

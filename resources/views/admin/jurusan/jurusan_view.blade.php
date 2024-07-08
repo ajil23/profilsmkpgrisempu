@@ -29,6 +29,7 @@
                                 <th><center>No</center></th>
                                 <th><center>Nama Jurusan</center></th>
                                 <th><center>Kode Jurusan</center></th>
+                                <th><center>Deskripsi Jurusan</center></th>
                                 <th><center>Aksi</center></th>
                             </tr>
                         </thead>
@@ -38,6 +39,7 @@
                                 <td><center>{{$loop->iteration}}</center></td>
                                 <td><center>{{$jurusan->nama}}</center></td>
                                 <td><center>{{$jurusan->kode}}</center></td>
+                                <td><center>{{$jurusan->deskripsi}}</center></td>
                                 <td colspan="2">
                                    <center>
                                     <a href="{{route('jurusan.edit', $jurusan->id)}}" class="btn btn-link">

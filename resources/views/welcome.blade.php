@@ -160,37 +160,13 @@
         </div>
         <div class="col-xl-8 col-lg-7">
           <div class="row feature-blocks bg-gray justify-content-between">
+            @foreach ($datajurusan as $item)
             <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
               <i class="ti-briefcase mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Perhotelan</h3>
-              <p>Program studi Perhotelan sering juga disingkat PH. Pada Program studi ini di pelajari teknik mendesain,
-                belajar membuat pola, menjahit, dan seluk beluk produksi busana atau fashion.</p>
+              <h3 class="mb-xl-4 mb-lg-3 mb-4">{{$item->nama}}</h3>
+              <p>{{$item->deskripsi}}</p>
             </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-              <i class="ti-star mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Kuliner</h3>
-              <p>Program studi Tata Boga mempelajari teknik penyajian makanan dengan memperhatikan kualitas, rasa,
-                estetika, dan kebutuhan gizi..</p>
-            </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-              <i class="ti-bolt mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Teknik Listrik</h3>
-              <p>Teknik Tenaga Listrik adalah bidang ilmu yang mempeljari teknik-teknik yang berhubungan dengan tenaga
-                listrik dan permasalahannya sehingga tenaga listrik dapat disalurkan dengan baik.</p>
-            </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-              <i class="ti-settings mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Teknik Mesin</h3>
-              <p>Teknik Mesin adalah ilmu teknik mengenai aplikasi dari prinsip fisika untuk analisis, desain,
-                manufuktur, dan pemeliharaan sebuah sistem mekanik.</p>
-            </div>
-            <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-              <i class="ti-desktop mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Rekayasa Perangkat Lunak</h3>
-              <p>Program Rekayasa Perangkat Lunak adalah satu bidang profesi yang mendalami cara-cara pengembangan
-                perangkat lunak termasuk pembuatan, pemeliharaan, menajemen organisasi pengembangan perangkat lunak dan
-                menajemen kualitas.</p>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>

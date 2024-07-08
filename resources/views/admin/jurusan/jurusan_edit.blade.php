@@ -24,6 +24,11 @@
                         </div>
                     </div>
                     <br>
+                    <div class="form-floating">
+                        <label for="floatingTextarea">Deskrips</label>
+                        <textarea class="form-control" placeholder="Deskripsi jurusan di tulis disini" id="deskripsi" name="deskripsi" value="{{$editjurusan->deskripsi}}"></textarea>
+                    </div>
+                    <br>
                     <div>
                         <button type="submit" value="Submit" class="btn btn-success shadow">Simpan</button>
                         <button type="button" onclick="history.back()" class="btn btn-danger shadow">Batalkan</button>

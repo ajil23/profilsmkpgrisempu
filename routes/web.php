@@ -6,6 +6,7 @@ use App\Http\Controllers\GuruController;
 use App\Http\Controllers\JurusanController;
 use App\Models\Artikel;
 use App\Models\Guru;
+use App\Models\Jurusan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,7 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $dataartikel = Artikel::all();
     $dataguru = Guru::all();
-    return view('welcome', compact('dataartikel', 'dataguru'));
+    $datajurusan = Jurusan::all();
+    return view('welcome', compact('dataartikel', 'dataguru', 'datajurusan'));
 });
 
 Auth::routes();
